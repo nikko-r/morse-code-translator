@@ -10,3 +10,15 @@ it("Should translate hello to .... . .-.. .-.. ---", () => {
 
     expect(result).toBe(".... . .-.. .-.. ---");
 });
+
+it("Should not allow invalid characters", () => {
+    const result = fnTranslateEngToMorse("!");
+
+    expect(result).toBe("Cannot contain invalid Character");
+});
+
+it("Should allow for either case", () => {
+    const result = fnTranslateEngToMorse("HEllo");
+
+    expect(result).toBe(".... . .-.. .-.. ---");
+});
