@@ -15,7 +15,12 @@ body {
     align-items: center;
     .textbox {
         margin: 1%;
-        width: 20rem;
+        width: 50%;
         height: 10rem;
+        font-size: 2rem;
+        text-align: left;
+        vertical-align: text-top;
+        word-wrap: break-word;
+        white-space: initial;
     }
 }
